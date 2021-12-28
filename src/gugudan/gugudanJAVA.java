@@ -6,14 +6,15 @@ public class gugudanJAVA {
     {
         //2단
         Scanner scan= new Scanner(System.in);
-        int dan;
-        dan=scan.nextInt();
-        int result;
-        for(int i=1;i<10;i++) {
-            result = dan * i;
-            System.out.println(result);
-
-
+        int dan=scan.nextInt();
+        int[] result=new int[9];
+        int count = 1;
+        for (int i=0;i<result.length;i++){
+            result[i] = dan * count;
+            count++;
+            System.out.println(result[i]);
         }
+
+
     }
 }
